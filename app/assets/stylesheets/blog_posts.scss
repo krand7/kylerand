@@ -1,0 +1,26 @@
+// New
+
+.new-blog-background-image {
+  background-attachment: fixed;
+  background-image: asset-url('cover/pebble_beach.jpeg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.new-blog {
+  padding-top: 100px;
+  #new-blog-content-field {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 3px #fafafa;
+  }
+  #new-blog-content-field:focus {
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  .footer {
+    background-color: rgba(30, 30, 30, .8);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

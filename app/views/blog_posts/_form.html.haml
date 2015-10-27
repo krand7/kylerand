@@ -1,0 +1,29 @@
+.new-blog
+  = form_for @blog_post do |f|
+    - if @blog_post.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@blog_post.errors.count, "error")} prohibited this blog_post from being saved:"
+        %ul
+          - @blog_post.errors.full_messages.each do |msg|
+            %li= msg
+    .container
+      .row
+        .col-sm-10.col-sm-offset-1
+          .form-group
+            = f.text_area :content, rows: 40, autofocus: true, class: 'form-control', id: 'new-blog-content-field'
+    .footer
+      .container
+        .row
+          .col-sm-10.col-sm-offset-1
+            %h3 A few other things...
+            .form-group
+              = f.text_field :title, placeholder: 'Title', class: 'form-control'
+            .form-group
+              = f.text_field :description, placeholder: 'Description', class: 'form-control'
+            .form-group
+              = f.text_field :slug, placeholder: 'Display slug', class: 'form-control'
+            .form-group
+              = f.submit 'Save', class: 'btn btn-success'
+            - unless @blog_post.new_record?
+              = link_to 'Show', @blog_post
+              = link_to 'Back', blog_posts_path

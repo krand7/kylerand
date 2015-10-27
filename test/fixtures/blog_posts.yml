@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Post One
+  description: This is the first blog post
+  content: Lorem ipsum...
+  slug: post-one
+
+two:
+  title: Post Two
+  description: This is the second blog post
+  content: Lorem ipsum...
+  slug: post-two

@@ -1,0 +1,5 @@
+.container
+  - @blog_posts.each do |bp|
+    = render bp, preview: true
+    - unless bp == @blog_posts.last
+      %hr

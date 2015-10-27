@@ -1,0 +1,9 @@
+%h1= blog_post.title
+%h3= blog_post.description
+- unless preview
+  %p= blog_post.content
+
+- if current_user and current_user.kyle?
+  = link_to 'Edit', edit_blog_post_path(blog_post)
+  |
+  = link_to 'Back', blog_posts_path
