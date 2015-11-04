@@ -13,6 +13,8 @@ class BlogPost < ActiveRecord::Base
   # Other macros
   # Concerns
   # Named scopes
+  scope :most_viewed, -> { order(views_count: :desc) }
+
   # Methods
   def to_param
     slug

@@ -12,6 +12,8 @@ gem 'devise'
 gem 'haml-rails'
 gem 'pg'
 
+gem 'redcarpet',            '~> 3.3.2'            # Markdown on forums
+
 group :test do
   # Pretty printed test output
   gem 'minitest'

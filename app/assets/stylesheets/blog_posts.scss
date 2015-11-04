@@ -2,13 +2,68 @@
 
 .new-blog-background-image {
   background-attachment: fixed;
-  background-image: asset-url('cover/pebble_beach.jpeg');
   background-size: cover;
   height: 100vh;
+
+  &.creative-1 {
+    background-image: asset-url('cover/pebble_beach.jpeg');
+  }
+
+  &.creative-2 {
+    background-image: asset-url('cover/engineering.jpeg');
+  }
+
+  &.creative-3 {
+    background-image: asset-url('cover/hardwood.jpeg');
+  }
+
+  &.creative-4 {
+    background-image: asset-url('cover/high_woods.jpeg');
+  }
+
+  &.creative-5 {
+    background-image: asset-url('cover/hotair_balloons.jpeg');
+  }
+
+  &.creative-6 {
+    background-image: asset-url('cover/mountains.jpeg');
+  }
+
+  &.creative-7 {
+    background-image: asset-url('cover/beach.jpeg');
+  }
+
+  &.creative-8 {
+    background-image: asset-url('cover/typewriter.jpeg');
+  }
+
+  &.creative-9 {
+    background-image: asset-url('cover/wanderlust.jpeg');
+  }
+
+  &.creative-10 {
+    background-image: asset-url('cover/winter_road.jpeg');
+  }
+
+  &.creative-11 {
+    background-image: asset-url('cover/wooded_road.jpeg');
+  }
 }
 
 .new-blog {
   padding-top: 100px;
+  position: relative;
+
+  .background-switcher {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   #new-blog-content-field {
     border: 1px solid #ddd;
     box-shadow: 0px 0px 5px 3px #fafafa;
@@ -24,3 +79,4 @@
     padding-bottom: 30px;
   }
 }
+
