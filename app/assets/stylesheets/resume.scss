@@ -1,0 +1,40 @@
+.resume {
+  background-color: $primary;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  min-height: 100vh;
+
+  .left-col {
+    background-color: $darker-gray;
+    border-radius: 2px;
+    color: $white;
+    display: none;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    .highlight {
+      color: $primary;
+    }
+
+    .progress {
+      background-color: transparent;
+      margin-bottom: 0px;
+      margin-top: 15px;
+    }
+
+    .progress-bar {
+      background-color: $primary;
+      border-radius: 5px;
+      height: 10px;
+      line-height: 10px;
+    }
+  }
+
+  .experience-container {
+    background-color: $white;
+    border-radius: 2px;
+    display: none;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}

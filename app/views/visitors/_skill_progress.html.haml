@@ -1,0 +1,7 @@
+.row
+  .col-xs-6
+    %h4= skill
+  .col-xs-6
+    .progress
+      .progress-bar{ role: "progressbar", style: "width: #{percent}%;"}
+        %span.sr-only= "#{percent}% Complete"

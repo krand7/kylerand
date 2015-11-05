@@ -1,0 +1,117 @@
+.resume
+  .container
+    .row
+      .col-sm-4.left-col#resume-left
+        %h3.highlight.bold
+          Duke University, 2014
+        %h4
+          Biomedical Engineering, BSE
+        %h4
+          Neuroscience, BS
+        %hr
+        %h3.highlight.bold
+          University of Auckland, 2012
+        %h4
+          Self-designed study abroad program
+        %hr
+        %h3.highlight.bold Technical Skills
+        = render 'skill_progress', skill: 'CoffeeScript', percent: 70
+        = render 'skill_progress', skill: 'CSS/SCSS', percent: 100
+        = render 'skill_progress', skill: 'EmberJS', percent: 40
+        = render 'skill_progress', skill: 'Google Analytics', percent: 90
+        = render 'skill_progress', skill: 'HTML/HAML', percent: 100
+        = render 'skill_progress', skill: 'jQuery', percent: 60
+        = render 'skill_progress', skill: 'PostgreSQL', percent: 60
+        = render 'skill_progress', skill: 'Ruby on Rails', percent: 80
+        = render 'skill_progress', skill: 'Swift', percent: 80
+        %br
+        = render 'skill_progress', skill: 'InDesign', percent: 100
+        = render 'skill_progress', skill: 'MotionBuilder', percent: 70
+        = render 'skill_progress', skill: 'PhotoShop', percent: 50
+        = render 'skill_progress', skill: 'SolidWorks', percent: 80
+        = render 'skill_progress', skill: '3DS Max', percent: 30
+        %hr
+        %h3.highlight.bold Medical Instrumentation
+        %h4
+          Affordable hypertension screening device for the developing world
+          %br
+          %i.small.highlight (Duke University)
+        %br
+        %h4
+          Scalp skin tensiometer
+          %br
+          %i.small.highlight (Auckland Bioengineering Institute)
+        %br
+        %h4
+          3D-printed mechanical upper-limb prosthetics
+          %br
+          %i.small.highlight (eNable Community)
+        %hr
+        %h3.highlight.bold Posters and Publications
+        %h4
+          Consumer choice in older adults: What happens when memory matters? Cognitive Neuroscience Society. Boston, MA.
+        %br
+        %h4
+          Neural basis for motor learning: Sensorimotor cortical ensembles multiplex spatial, temporal, and reward-related information. Society for Neuroscience. Washington, DC.
+        %br
+        %h4
+          Electrophysiological evidence for a suppressive mechanism in the debate over selective attention. Neurogenesis Journal of Undergraduate Research. 2(2).
+
+
+      .col-sm-8.right-col#resume-right
+        .experience-container
+          %h3 UI/UX Developer
+          %ul
+            %li Lead developer for patient centered research network (sleep apnea)
+            %li Organize and align marketing efforts with development goals to maximize patient engagement and data completeness
+            %li Interface between developers, researchers, patient focus groups, and student interns to optimize features for diverse membership
+            %li Developed full API and iOS application that dynamically rebuilds data-collection tasks, utilizing flexibility of Apple’s ResearchKit
+          %h4.pull-right= link_to 'View project', 'http://myapnea.org'
+          .clearfix
+
+        .experience-container
+          %h3 Technical Director
+          %ul
+            %li Built web application to enable grassroots volunteers to collect and store personally identifiable health data, and use this information to enroll in healthcare
+            %li Developed heirarchical organization to allow secure, limited data-reporting
+            %li Collaborating with students to develop high-level end user documentation
+          %h4.pull-right= link_to 'View project', 'http://bejerseystrong.org'
+          .clearfix
+
+        .experience-container
+          %h3 Founder
+          %ul
+            %li Ideated crowdsourcing platform to raise money for reforestation efforts through public recognition and appreciation of others’ work
+            %li Utilized sprint methodology to complete full design, development, and integration of Stripe API within abbreviated time period
+            %li Spearheaded soft launch, which successfully demonstrated product viability/virality
+          %h4.pull-right= link_to 'View project', 'http://rootsofgoodness.org'
+          .clearfix
+
+        .experience-container
+          %h3 Editor in Chief
+          %ul
+            %li Directed editorial team to recruit, organize and release scientific publications biannually
+            %li Directed our organic growth towards international outreach and community relevance via social media development and global networking
+            %li Organized networking events and professional relationships to drive student submissions
+
+        .experience-container
+          %h3 Undergraduate Research Fellow
+          %ul
+            %li Furthered development of a programmable 3D monkey avatar as a novel methodology in social neuroscience research
+            %li Utilized monkey-avatar interactions in the development of brain-control over non-self conspecifics (via social cues and reward timing)
+            %li Developed a paradigm to gain brain-control of a non-self avatar’s head via multi-unit recording in primary motor area and areas associated with body orientation
+            %li Combinatorial programming in C++, Autodesk 3DS Max and MotionBuilder, and MATLAB
+
+        .experience-container
+          %h3 Brain and Society Team Research Fellow
+          %ul
+            %li Analyzed func onal neuroimaging data to study mechanisms of memory decline
+            %li Designed and programmed experiments using MATLAB and PsychToolbox to test specific cognitive paradigms and evaluate behavioral differences related to aging
+            %li Lead programmer on a series of experiements related to neuroeconomics
+            %li Independently created a new paradigm to test memory enhancement using non-invasive techniques
+
+        .experience-container
+          %h3 International Neuroengineering Fellow
+          %ul
+            %li Implemented phase-locking algorithms to determine functional connectivity during source memory tasks in rats
+            %li Prototyped multielectrode arrays capable of chronic recording and simulation of peripheral nerve branches in mobile rats

@@ -6,6 +6,8 @@
 @loaders = () ->
   mainLoader()
   blogPostsReady()
+  landingReady()
+  resumeReady()
 
 $(document).ready(loaders)
 $(document)

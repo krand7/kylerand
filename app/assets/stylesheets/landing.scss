@@ -3,3 +3,12 @@
   color: $secondary;
   height: 100vh;
 }
+
+.callout-landing {
+  $callout-size: 40px;
+  background-color: $white;
+  border-radius: $callout-size/2;
+  display: none;
+  height: $callout-size;
+  width: $callout-size;
+}
