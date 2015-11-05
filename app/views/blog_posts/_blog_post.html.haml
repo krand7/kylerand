@@ -1,6 +1,11 @@
-%h1= blog_post.title
-%p.lead= blog_post.description
-- unless preview
+- if preview
+  %h1= link_to blog_post.title, blog_post
+  %p.lead= blog_post.description
+  %p.small= blog_post.created_at.strftime('%B %e, %Y')
+- else
+  %h1= blog_post.title
+  %p.small= blog_post.created_at.strftime('%B %e, %Y')
+  %p.lead= blog_post.description
   %hr
   = simple_markdown(blog_post.content)
 

@@ -1,26 +1,5 @@
-.container
-  .row
-    .col-sm-9
-    .col-sm-3
-      .connect-container
-        = link_to 'https://www.facebook.com/kyle.rand.581' do
-          = image_tag 'social/Facebook'
-        = link_to 'https://twitter.com/krand7' do
-          = image_tag 'social/Twitter'
-        = link_to 'https://www.linkedin.com/pub/kyle-rand/65/b19/266' do
-          = image_tag 'social/LinkedIn'
-        = link_to 'https://github.com/krand7' do
-          = image_tag 'social/Github'
-        %br
-        %br
-        = link_to 'https://instagram.com/kylerand/' do
-          = image_tag 'social/Instagram'
-        = link_to 'https://open.spotify.com/user/12959916/' do
-          = image_tag 'social/Spotify'
-        = link_to 'https://soundcloud.com/kylerand' do
-          = image_tag 'social/Soundcloud'
-      - bp = BlogPost.most_viewed.first
-      = link_to bp.title, bp
-      %p= bp.description
-
-
+.header
+  - 5.times do
+    %br
+  .centered
+    = image_tag 'social/name_cutout_3', width: 300

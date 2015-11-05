@@ -7,7 +7,8 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'KR', root_path, class: 'navbar-brand'
+      = link_to root_path, class: 'navbar-brand' do
+        = image_tag 'social/initials_cutout', width: 35
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'

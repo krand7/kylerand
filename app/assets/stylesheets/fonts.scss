@@ -1,4 +1,5 @@
-/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -21,4 +22,8 @@
   font-weight: 700;
   src: asset-url('opensans/OpenSans-Bold.woff') format('woff'),
        asset-url('opensans/OpenSans-Bold.ttf') format('truetype');
+}
+
+.centered {
+  text-align: center;
 }

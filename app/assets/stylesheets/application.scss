@@ -4,11 +4,13 @@
 @import "bootstrap";
 
 // Layout
-@import "body";
+@import "colors";
 @import "fonts";
+@import "body";
 
 // Blog
 @import "blog_posts";
 
 // Other
+@import "landing";
 @import "connect";

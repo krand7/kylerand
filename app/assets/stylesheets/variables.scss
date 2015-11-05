@@ -49,7 +49,7 @@ $font-family-sans-serif:  'Open Sans', sans-serif; // $font-family-sans-serif:  
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          16px !default; // 14px !default;
+// $font-size-base:          16px !default; // 14px !default;
 // $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -364,13 +364,13 @@ $grid-float-breakpoint:     $screen-sm-max !default; // $grid-float-breakpoint: 
 // $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 // $navbar-collapse-max-height:       340px !default;
 
-// $navbar-default-color:             #777 !default;
-// $navbar-default-bg:                #f8f8f8 !default;
-// $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-color:             #fff !default; // #777 !default;
+$navbar-default-bg:                transparent; //#f8f8f8 !default;
+$navbar-default-border:            transparent; //darken($navbar-default-bg, 6.5%) !default;
 
 // // Navbar links
-// $navbar-default-link-color:                #777 !default;
-// $navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-color:                #fff !default; //#777 !default;
+$navbar-default-link-hover-color:          #eee !default; //#333 !default;
 // $navbar-default-link-hover-bg:             transparent !default;
 // $navbar-default-link-active-color:         #555 !default;
 // $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;

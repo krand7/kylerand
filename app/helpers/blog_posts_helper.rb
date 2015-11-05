@@ -7,6 +7,7 @@ module BlogPostsHelper
     result = result.encode('UTF-16', undef: :replace, invalid: :replace, replace: "").encode('UTF-8')
     result = make_images_responsive(result)
     result = target_link_as_blank(result)
+    result = style_paragraphs(result)
     result.html_safe
   end
 
@@ -20,6 +21,10 @@ module BlogPostsHelper
 
   def make_images_responsive(text)
     text.to_s.gsub(/<img/, '<img class="img-responsive"').html_safe
+  end
+
+  def style_paragraphs(text)
+    text.to_s.gsub(/<p/, '<p class="lead"').html_safe
   end
 
 end
