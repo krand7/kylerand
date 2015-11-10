@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   root to: 'visitors#index'
   get 'resume', to: 'visitors#resume'
+  get 'connect', to: 'visitors#connect'
 
   devise_for :users, controllers: { registrations: 'users/registrations' }
   resources :users

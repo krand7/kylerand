@@ -4,4 +4,7 @@ class VisitorsController < ApplicationController
 
   def resume
   end
+
+  def connect
+  end
 end

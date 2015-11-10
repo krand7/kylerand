@@ -1,5 +1,5 @@
 .header
-  - 4.times do
+  - 2.times do
     %br
   .centered
     = image_tag 'social/name_cutout_3', width: 300
@@ -10,21 +10,30 @@
       %span#kyle-describer
   - 3.times do
     %br
-  .row
-    .col-xs-2
-    .col-xs-1
-      #callout-0.callout-landing
-    .col-xs-1
-      #callout-1.callout-landing
-    .col-xs-1
-      #callout-2.callout-landing
-    .col-xs-1
-      #callout-3.callout-landing
-    .col-xs-1
-      #callout-4.callout-landing
-    .col-xs-1
-      #callout-5.callout-landing
-    .col-xs-1
-      #callout-6.callout-landing
-    .col-xs-1
-      #callout-7.callout-landing
+  .container
+    .row
+      .col-xs-2
+      .col-xs-2.col-sm-1.centered
+        = link_to resume_path do
+          #callout-0.callout-landing
+      .col-xs-2.col-sm-1.centered
+        = link_to resume_path do
+          #callout-1.callout-landing
+      .col-xs-2.col-sm-1.centered
+        = link_to resume_path do
+          #callout-2.callout-landing
+      .col-xs-2.col-sm-1.centered
+        = link_to 'http://twitter.com/krand7/status/648844222892802048' do
+          #callout-3.callout-landing
+      .col-xs-2.col-xs-offset-2.col-sm-1.col-sm-offset-0
+        = link_to 'http://rootsofgoodness.org/receivers/2' do
+          #callout-4.callout-landing
+      .col-xs-2.col-sm-1
+        = link_to blog_posts_path do
+          #callout-5.callout-landing
+      .col-xs-2.col-sm-1
+        = link_to 'http://www.instagram.com/kylerand/' do
+          #callout-6.callout-landing
+      .col-xs-2.col-sm-1
+        = link_to connect_path do
+          #callout-7.callout-landing

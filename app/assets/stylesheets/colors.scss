@@ -1,5 +1,5 @@
-$primary: #00D0FF;
-$secondary: #333;
+$primary: #00d0ff;
+$secondary: #3f51b5;
 
 $white: #fff;
 $lightest-gray: #efefef;
@@ -11,3 +11,7 @@ $darkest-gray: #101010;
 $black: #000;
 
 .white { color: $white; }
+
+.primary { color: $primary; }
+
+.secondary { color: $secondary; }

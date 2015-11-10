@@ -1,9 +1,9 @@
+%br
 .container
   - @blog_posts.each do |bp|
-    = render bp, preview: true
-    - unless bp == @blog_posts.last
-      %hr
+    .blog-post-container
+      = render bp, preview: true
 
   - if current_user and current_user.kyle?
-    %hr
-    = link_to 'New', new_blog_post_path
+    .blog-post-container
+      = link_to 'New post', new_blog_post_path

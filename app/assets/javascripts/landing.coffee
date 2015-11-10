@@ -4,13 +4,15 @@
                   'Biomedical Engineer',
                   'Neuroscientist',
                   '3D Printer Enthusiast'
-                  'Rails Lover',
+                  'Treehugger',
                   'Adjective Afficionado',
                   'Traveler']
 
-  fadeInTime = 400
-  delayTime = 1000
-  fadeOutTime = 400
+  finalDescriptor = "Let's work together!"
+
+  fadeInTime = 300
+  delayTime = 600
+  fadeOutTime = 300
 
   cycle = () ->
     $('#callout-'+i).fadeIn fadeInTime
@@ -23,7 +25,7 @@
           cycle()
         else if i == descriptors.length
           $('#callout-7').fadeIn fadeInTime
-          $(this).fadeIn(fadeInTime).html 'Say 👋'
+          $(this).fadeIn(fadeInTime).html finalDescriptor
         else
           $(this).fadeIn(10)
     i++
@@ -39,7 +41,7 @@
       $('.callout-landing').each( () ->
         $(this).fadeIn(10)
       )
-      $('#kyle-describer').html descriptors[hoverNumber]
+      $('#kyle-describer').html descriptors.concat(finalDescriptor)[hoverNumber]
     )
 
 

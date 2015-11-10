@@ -10,5 +10,13 @@
   border-radius: $callout-size/2;
   display: none;
   height: $callout-size;
+  margin: auto;
+  text-align: center;
   width: $callout-size;
+}
+
+@media (max-width: $screen-sm) {
+  .callout-landing {
+    margin-bottom: 20px;
+  }
 }

@@ -1,0 +1,12 @@
+.btn-custom {
+  background-color: $secondary;
+  border-bottom: 3px solid darken($secondary, 5);
+  border-radius: 5px;
+  color: $white;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($secondary, 5);
+    color: $white;
+  }
+}

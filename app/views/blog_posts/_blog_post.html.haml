@@ -1,15 +1,19 @@
 - if preview
-  %h1= link_to blog_post.title, blog_post
-  %p.lead= blog_post.description
+  %h2.no-margin-top= link_to blog_post.title, blog_post
+  %h4= blog_post.description
   %p.small= blog_post.created_at.strftime('%B %e, %Y')
 - else
-  %h1= blog_post.title
+  %h1.no-margin-top= blog_post.title
+  %h4= blog_post.description
   %p.small= blog_post.created_at.strftime('%B %e, %Y')
-  %p.lead= blog_post.description
   %hr
   = simple_markdown(blog_post.content)
 
 - if current_user and current_user.kyle?
-  = link_to 'Edit', edit_blog_post_path(blog_post)
+  %span.secondary.bold
+    = pluralize(blog_post.views_count, 'view')
   |
-  = link_to 'Back', blog_posts_path
+  = link_to 'Edit', edit_blog_post_path(blog_post)
+  - if params[:action] == 'show'
+    |
+    = link_to 'Back', blog_posts_path

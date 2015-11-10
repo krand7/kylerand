@@ -1,11 +1,38 @@
 $header-height: 50px;
 
 header {
-  background-color: $primary;
   font-size: 16px;
   height: $header-height;
 }
 
 body {
+  background-color: $primary;
   font-family: 'Pontano Sans', sans-serif;
+}
+
+.collapsing,
+.collapse.in {
+  background-color: $primary;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px;
+
+  a {
+    height: 40px;
+    margin: 10px;
+    opacity: .8;
+    width: 40px;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
 }

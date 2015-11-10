@@ -2,3 +2,5 @@
 
 - Instantiated application
 - Added blog posts
+- Added connect with me link
+- Added resume

@@ -7,7 +7,7 @@ module BlogPostsHelper
     result = result.encode('UTF-16', undef: :replace, invalid: :replace, replace: "").encode('UTF-8')
     result = make_images_responsive(result)
     result = target_link_as_blank(result)
-    result = style_paragraphs(result)
+    # result = style_paragraphs(result)
     result.html_safe
   end
 
