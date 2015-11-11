@@ -6,3 +6,4 @@
 - Added resume
 - Added google analytics
 - Added basic SEO elements
+- Added writing corner

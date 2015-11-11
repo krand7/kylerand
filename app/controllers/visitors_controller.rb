@@ -7,4 +7,8 @@ class VisitorsController < ApplicationController
 
   def connect
   end
+
+  def writing
+    render layout: 'creative'
+  end
 end

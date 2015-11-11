@@ -1,0 +1,15 @@
+- content_for :title, 'Kyle Rand | Writing Corner'
+- content_for :description, 'Write online with a pleasant and creative ambiance'
+.new-blog
+  .background-switcher{ 'data-object' => 'switch-background' }
+    %span.glyphicon.glyphicon-refresh
+  .container
+    .row
+      .col-sm-10.col-sm-offset-1
+        .form-group
+          = text_area_tag :content, nil, rows: 70, autofocus: true, class: 'form-control', id: 'new-blog-content-field'
+  .footer
+    .container
+      .centered
+        %iframe{ allowtransparency: 'true', frameborder: '0', height: '100', src: 'https://embed.spotify.com/?uri=spotify%3Auser%3A12959916%3Aplaylist%3A6I7s0UZOjutO6Kb0pYHOyW', width: '100%', style: 'max-width: 945px' }
+  = render 'layouts/footer'
