@@ -5,3 +5,4 @@
 - Added connect with me link
 - Added resume
 - Added google analytics
+- Added basic SEO elements

@@ -1,3 +1,6 @@
+- content_for :title, 'Kyle Rand | ' + @blog_post.title
+- content_for :description, @blog_post.description
+
 .container
   .blog-post-container
     = render @blog_post, preview: false
