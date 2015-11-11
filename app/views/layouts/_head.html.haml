@@ -1,0 +1,12 @@
+%title= content_for?(:title) ? yield(:title) : 'Kyle Rand'
+%meta{ name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Personal Site of Kyle Rand'}"}
+%meta{ name: "viewport", content: "width=device-width, initial-scale=1.0"}
+%meta{ charset: 'utf-8'}
+%meta{ content: 'IE=Edge,chrome=1', http: {equiv: 'X-UA-Compatible'}}
+%meta{ property: 'og:url', content: 'http://kylerand.co/' }
+%meta{ property: 'og:title', content: 'Kyle Rand' }
+%meta{ property: 'og:description', content: 'Kyle Rand is a developer for hire, access his work and get in touch here' }
+%meta{ property: 'og:image', content: 'http://kylerand.co/assets/' + asset_path('social/blue_name_cutout.png').split('/assets/').last }
+%meta{ itemprop: 'name', content: 'Kyle Rand' }
+%meta{ itemprop: 'description', content: 'Kyle Rand is a developer for hire, access his work and get in touch here' }
+%meta{ itemprop: 'image', content: 'http://kylerand.co/assets/' + asset_path('myapnea/MyApneaLogo_border_whitesub_square.png').split('/assets/').last }
